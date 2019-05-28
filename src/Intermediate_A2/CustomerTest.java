@@ -18,6 +18,8 @@ class CustomerTest {
 
     @Test
     void getName() {
+        BankAccount a1 = new BankAccount(new Customer("Annina", "Home01", 5), 5000.00);
+        assertNotEquals("Benjamin", a1.getCustomer().getName());
     }
 
     @Test

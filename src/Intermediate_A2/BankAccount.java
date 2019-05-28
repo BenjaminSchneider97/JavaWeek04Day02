@@ -29,8 +29,13 @@ public class BankAccount {
         this.accountBalance += addMoney;
     }
 
+    public int calcLimit(){
+        int limit = this.customer.getCreditScore()*-1000;
+        return limit;
+    }
+
     public void withdrawMoney(double removeMoney) throws BankAcccountNegativeException{
-        if((this.accountBalance - removeMoney) < (-1000 * this.customer.getCreditScore())){
+        if((this.accountBalance - removeMoney) < calcLimit()){
             throw new BankAcccountNegativeException();
         } else {
             this.accountBalance -= removeMoney;

@@ -1,4 +1,4 @@
-package Intermediate_A3;
+package Intermediate_A2;
 
 public class BadCreditScoreException extends Exception {
 }

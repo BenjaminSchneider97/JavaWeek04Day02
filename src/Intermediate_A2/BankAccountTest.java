@@ -9,14 +9,8 @@ import static org.junit.jupiter.api.Assertions.*;
 class BankAccountTest {
 
     BankAccount ba1 = new BankAccount(
-            new Customer("Annina", "Myhome 01", 5),
+            new Customer("Annina", "Myhome 01", 3),
             5000);
-    DebitCardAccount dca1 = new DebitCardAccount(
-            new Customer("John", "MyHome 02", 0),
-            2000);
-    CreditCardAccount cca1 = new CreditCardAccount(
-            new Customer("Jane", "MyHome 03", 5),
-            1000);
 
     @BeforeEach
     void setUp() {
@@ -48,7 +42,7 @@ class BankAccountTest {
 
     @Test
     void calcLimit() {
-        assertTrue(ba1.calcLimit() == -5000);
+        assertTrue(ba1.calcLimit() == -3000);
     }
 
     @Test

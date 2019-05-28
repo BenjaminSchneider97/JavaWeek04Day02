@@ -15,26 +15,26 @@ class BankAccountTest {
     void setAccountNumber() {
         BankAccount b1 = new BankAccount(1, "John", "Doe");
         b1.setAccountNumber(5);
-        assertFalse(b1.getAccountNumber() != 1);
+        assertFalse(b1.getAccountNumber() == 1);
     }
 
     @Test
     void getAccountNumber() {
         BankAccount b1 = new BankAccount(1, "John", "Doe");
-        assertNotEquals("John", b1.getName());
+        assertNotEquals("Benjamin", b1.getName());
     }
 
     @Test
     void setName() {
         BankAccount b1 = new BankAccount(1, "John", "Doe");
         b1.setName("James");
-        assertTrue(b1.getName().equals("Jumbo"));
+        assertTrue(b1.getName().equals("James"));
     }
 
     @Test
     void getName() {
         BankAccount b1 = new BankAccount(1, "John", "Doe");
-        assertEquals(5, b1.getAccountNumber());
+        assertEquals(1, b1.getAccountNumber());
     }
 
     @Test

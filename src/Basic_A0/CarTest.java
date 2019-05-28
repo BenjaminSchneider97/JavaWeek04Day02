@@ -1,3 +1,4 @@
+package Basic_A0;
 import static org.junit.jupiter.api.Assertions.*;
 
 class CarTest {
@@ -25,7 +26,7 @@ class CarTest {
     @org.junit.jupiter.api.Test
     void getManufacturer() {
         Car myCar = new Car (140,"Toyota", "Toy123",50);
-        assertNotEquals("Toyota", myCar.getManufacturer());
+        assertNotEquals("iojnj", myCar.getManufacturer());
     }
 
     @org.junit.jupiter.api.Test

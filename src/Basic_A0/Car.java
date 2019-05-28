@@ -1,3 +1,5 @@
+package Basic_A0;
+
 public class Car {
 
     //ike power in kW, name of the manufacturer, name of model, current speed etc

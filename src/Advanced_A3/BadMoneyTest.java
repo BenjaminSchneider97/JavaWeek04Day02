@@ -18,5 +18,9 @@ class BadMoneyTest {
 
     @Test
     void main() {
+        float originalPrice = 400000.00f;
+        float reducedPrice = originalPrice - 0.05f;
+        float discount = originalPrice - reducedPrice;
+        assertEquals(0.05, discount);
     }
 }

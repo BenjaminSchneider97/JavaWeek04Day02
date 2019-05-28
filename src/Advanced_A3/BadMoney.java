@@ -11,9 +11,10 @@ import java.text.*;
  *    If your prediction was incorrect, research the cause and write up a
  *    detailed technical explanation for the observed results.
  ******************************************************************/
-public class BadMoney
-{
+public class BadMoney {
+
     public static void main(String[] args) {
+
         // Example 1
         float originalPrice = 400000.00f;
         // to make the price more attractive, we'll reduce it to $399999.95
